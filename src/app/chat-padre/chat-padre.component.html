@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chat General</h1>
+    <div class="chat-container">
+        <textarea name="chat1" id="chat1" cols="30" rows="10" [value]="chat1" readonly="readonly"></textarea>
+        <textarea name="chat2" id="chat2" cols="30" rows="10" [value]="chat2" readonly="readonly"></textarea>
+    </div>
+    <app-chat-hijo1 (mensajeDeChat1)="onRecibirMensaje1($event)"></app-chat-hijo1>
+    <app-chat-hijo2 (mensajeDeChat2)="onRecibirMensaje2($event)"></app-chat-hijo2>
+</body>
+</html>
